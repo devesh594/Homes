@@ -394,6 +394,39 @@
         </div>
       </div>
     </section>
+
+    <script>
+      let form = document.getElementById("form");
+      form.addEventListener("submit", event);
+      function event() {
+        let name = document.getElementById("name").value;
+        console.log(name);
+        let email = document.getElementById("email").value;
+        console.log(email);
+        let Address = document.getElementById("Address").value;
+        console.log(Address);
+        let address2 = document.getElementById("address2").value;
+        console.log(address2);
+        let City = document.getElementById("City").value;
+        console.log(City);
+        let State = document.getElementById("State").value;
+        console.log(State);
+        let Zip = document.getElementById("Zip").value;
+        console.log(Zip);
+        let check = document.getElementById("check").value;
+        console.log(check);
+
+        localStorage.setItem("your name is", name);
+        localStorage.setItem("your email is", email);
+        localStorage.setItem("your address is", Address);
+        localStorage.setItem("your address2 is", address2);
+        localStorage.setItem("your city is", City);
+        localStorage.setItem("your state is", State);
+        localStorage.setItem("your zip is", Zip);
+        localStorage.setItem("your check is", check);
+      }
+    </script>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
